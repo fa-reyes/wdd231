@@ -1,0 +1,88 @@
+@media screen and (min-width: 768px) {
+
+    /* HEADER */
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1rem 2rem 0;
+        border-bottom: none;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    /* NAV */
+    nav {
+        display: block !important;
+        width: auto;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        flex: 1;
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.75rem 1.25rem;
+        background-color: var(--medium-dark);
+        color: var(--white);
+        font-weight: 700;
+        text-align: center;
+        transition: background-color 0.2s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+        background-color: var(--accent);
+    }
+
+    /* MAIN */
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    /* ABOUT ME & STUDENT PHOTO */
+    .top-sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .top-sections .main-section {
+        margin-bottom: 0;
+    }
+
+    .photo img {
+        width: 100%;
+        margin: 1.5rem auto;
+    }
+
+    /* WEB CERTIFICATE COURSES */
+    .course-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+    }
+
+    .course-card {
+        text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 2rem;
+    }
+
+    footer .social {
+        margin-bottom: 1.25rem;
+    }
+}

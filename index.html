@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <meta name="author" content="Fabian Reyes">
+    <meta name="description" content="Home Page for Fabian Reyes, WDD231 course website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <img src="" alt="Fabian Reyes logo" class="logo">
+        <span class="site-name">Fabian Reyes</span>
+        <button id="menu-btn" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Chamber Project</a></li>
+                <li><a href="">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+
+        <div class="top-sections">
+            <section class="main-section about">
+                <h2>About me</h2>
+                <p></p>
+            </section>
+
+            <section class="main-section photo">
+                <h2>Student Photo</h2>
+                <img src="" alt="Photo of Fabian Reyes">
+            </section>
+        </div>
+
+        <section class="main-section courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div class="course-cards"></div>
+            <p class="total-credits"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/fa-reyes" target="_blank"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/tuusuario" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Fabian Reyes | Chile</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
