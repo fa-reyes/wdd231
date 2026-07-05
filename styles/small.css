@@ -185,7 +185,6 @@ main>h1 {
 
 .course-card.completed {
     background-color: var(--gray-medium);
-    color: var(--white);
 }
 
 .course-card h3,
