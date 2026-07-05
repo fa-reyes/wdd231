@@ -1,10 +1,10 @@
 :root {
-    --dark: #1a1a1a;
-    --medium-dark: #2b2b2b;
-    --gray-light: #d9d9d9;
-    --gray-medium: #a6a6a6;
+    --dark: #1b2a4a;
+    --medium-dark: #24395e;
+    --gray-light: #eef2f7;
+    --gray-medium: #b8c4d6;
     --white: #ffffff;
-    --accent: #3a3a3a;
+    --accent: #3d6fb4;
 
     --font-main: 'Roboto', sans-serif;
 }
@@ -45,9 +45,8 @@ header {
 }
 
 header .logo {
-    width: 40px;
-    height: 40px;
-    border: 2px solid var(--dark);
+    width: 44px;
+    height: 44px;
     margin-right: 0.5rem;
 }
 
