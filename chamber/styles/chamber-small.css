@@ -1,7 +1,8 @@
 :root {
     --color-ocean-deep: #0d3b45;
-    --color-copper: #b5541e;
-    --color-copper-light: #d9834b;
+    --color-copper: rgb(181, 84, 30);
+    --color-copper-light: rgb(217, 131, 75);
+    --color-copper-lighter: rgb(230, 150, 95);
     --color-sand: #e4d8be;
     --color-sky: #2f6e7c;
     --color-cream: #faf7f2;
@@ -201,7 +202,7 @@ header {
 }
     
 .primary-nav a.active {
-    color: var(--color-copper-light);
+    color: var(--color-copper-lighter);
 }
     
 main {
