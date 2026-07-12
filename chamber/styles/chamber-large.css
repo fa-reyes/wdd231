@@ -1,0 +1,104 @@
+@media (min-width: 700px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    .header-inner {
+        padding: 1rem 1.5rem;
+    }
+    
+    .brand-logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .brand-name {
+        font-size: 1.2rem;
+    }
+    
+    .brand-name small {
+        font-size: 0.78rem;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    .primary-nav {
+        max-height: none;
+        overflow: visible;
+        border-top: none;
+    }
+    
+    .primary-nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1.75rem;
+        padding: 0 1.5rem;
+    }
+    
+    .primary-nav a {
+        border-bottom: none;
+        padding: 0.35rem 0.1rem;
+        position: relative;
+    }
+    
+    .primary-nav a.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -4px;
+        height: 2px;
+        background-color: var(--color-copper-light);
+    }
+    
+    main {
+        padding: 2.5rem 1.5rem 4rem;
+    }
+    
+    .directory-intro {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .directory-intro>div:first-child {
+        max-width: 60ch;
+    }
+    
+    .view-toggle {
+        margin-top: 0;
+        flex-shrink: 0;
+    }
+    
+    .directory.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2.25rem 1.5rem;
+    }
+    
+    .footer-dev {
+        border-top: none;
+        padding-top: 0;
+        text-align: right;
+    }
+}
+    
+@media (min-width: 1000px) {
+    .directory.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

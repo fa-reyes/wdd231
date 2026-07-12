@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Directory | Antofagasta Chamber of Commerce</title>
+    <meta name="author" content="Fabian Reyes">
+    <meta name="description" content="Browse the member directory of the Antofagasta Chamber of Commerce — mining, tourism, and local businesses">
+
+    <link rel="icon" href="images/chamber.ico">
+
+    <meta property="og:title" content="Member Directory | Antofagasta Chamber of Commerce">
+    <meta property="og:description" content="Browse local mining, port, hospitality, and tourism businesses that belong to the Antofagasta Chamber of Commerce.">
+    <meta property="og:image" content="https://fa-reyes.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://fa-reyes.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <img src="images/logo.svg" alt="" class="brand-logo">
+                <span class="brand-name">Antofagasta<small>Chamber of Commerce</small></span>
+            </a>
+            <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="primaryNav">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        <nav id="primaryNav" class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="directory-intro">
+            <div>
+                <h1>Member Directory</h1>
+                <p>Explore the businesses and organizations that power Antofagasta's economy — from copper mining and port
+                    logistics to hotels, cafés, and desert tour operators.</p>
+            </div>
+            <div class="view-toggle" role="group" aria-label="Directory display">
+                <button id="gridBtn" class="view-btn" aria-pressed="false">Grid view</button>
+                <button id="listBtn" class="view-btn" aria-pressed="false">List view</button>
+            </div>
+        </section>
+    
+        <section id="directory" class="directory grid-view" aria-live="polite">
+            <p class="loading">Loading member directory…</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <p><strong>Antofagasta Chamber of Commerce</strong></p>
+                <p>Av. Grecia 1350, Antofagasta, Chile</p>
+                <p>+56 55 200 1000 · info@antofagastachamber.example.com</p>
+            </div>
+            <div class="footer-dev">
+                <p>Fabian Reyes</p>
+                <p>WDD 231 &mdash; Web Frontend Development I</p>
+                <p>&copy; <span id="year"></span> Antofagasta Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

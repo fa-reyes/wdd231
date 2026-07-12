@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0D3B45"/>
+  <path d="M0 470 Q300 400 600 470 T1200 470 V630 H0 Z" fill="#3E8E9E" opacity="0.5"/>
+  <path d="M0 520 Q300 460 600 520 T1200 520 V630 H0 Z" fill="#0D3B45"/>
+  <path d="M420 470 L560 220 L640 350 L720 260 L860 470 Z" fill="#B5541E"/>
+  <circle cx="830" cy="150" r="46" fill="#E4D8BE"/>
+  <text x="600" y="130" font-family="Georgia, serif" font-size="58" fill="#FAF7F2" text-anchor="middle" font-weight="bold">Antofagasta Chamber of Commerce</text>
+  <text x="600" y="185" font-family="Georgia, serif" font-size="28" fill="#E4D8BE" text-anchor="middle">Copper. Coastline. Commerce.</text>
+</svg>

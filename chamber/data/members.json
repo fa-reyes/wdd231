@@ -1,0 +1,92 @@
+{
+  "members": [
+    {
+      "name": "Escondida Copper Solutions",
+      "address": "Av. Balmaceda 2140, Antofagasta, Chile",
+      "phone": "+56 55 234 5678",
+      "url": "https://www.escondidacoppersolutions.example.com",
+      "image": "images/escondida.svg",
+      "membership": 3,
+      "category": "Mining & Industrial Services",
+      "founded": 1998,
+      "tagline": "Precision equipment and logistics for the Atacama's copper industry."
+    },
+    {
+      "name": "Puerto de Antofagasta Logistics",
+      "address": "Terminal Portuario, Av. Grecia 1450, Antofagasta, Chile",
+      "phone": "+56 55 245 8890",
+      "url": "https://www.puertoantofagastalogistics.example.com",
+      "image": "images/port-logistics.svg",
+      "membership": 3,
+      "category": "Shipping & Freight",
+      "founded": 1985,
+      "tagline": "Connecting northern Chile's exports to the world."
+    },
+    {
+      "name": "Hotel Terrado Suites Antofagasta",
+      "address": "Av. Grecia 1000, Antofagasta, Chile",
+      "phone": "+56 55 222 3344",
+      "url": "https://www.terradosuites-antofagasta.example.com",
+      "image": "images/terrado-suites.svg",
+      "membership": 2,
+      "category": "Hospitality",
+      "founded": 2005,
+      "tagline": "Oceanfront comfort for business and leisure travelers."
+    },
+    {
+      "name": "Universidad Católica del Norte — Business Partnerships",
+      "address": "Av. Angamos 0610, Antofagasta, Chile",
+      "phone": "+56 55 235 5555",
+      "url": "https://www.ucn.example.cl/partnerships",
+      "image": "images/ucn-partnerships.svg",
+      "membership": 2,
+      "category": "Education",
+      "founded": 1956,
+      "tagline": "Training tomorrow's workforce for the mining and coastal economy."
+    },
+    {
+      "name": "La Portada Restobar",
+      "address": "Balneario La Portada s/n, Antofagasta, Chile",
+      "phone": "+56 55 267 1122",
+      "url": "https://www.laportadarestobar.example.com",
+      "image": "images/la-portada-resto.svg",
+      "membership": 1,
+      "category": "Restaurant",
+      "founded": 2016,
+      "tagline": "Fresh Pacific seafood with a view of the natural arch."
+    },
+    {
+      "name": "Atacama Desert Tours",
+      "address": "Av. Argentina 350, Antofagasta, Chile",
+      "phone": "+56 55 278 4400",
+      "url": "https://www.atacamadeserttours.example.com",
+      "image": "images/atacama-tours.svg",
+      "membership": 2,
+      "category": "Tourism",
+      "founded": 2011,
+      "tagline": "Guided expeditions into the driest desert on Earth."
+    },
+    {
+      "name": "Pesquera Costa Azul",
+      "address": "Caleta Coloso, Antofagasta, Chile",
+      "phone": "+56 55 289 9012",
+      "url": "https://www.pesqueracostaazul.example.com",
+      "image": "images/costa-azul.svg",
+      "membership": 1,
+      "category": "Fishing & Aquaculture",
+      "founded": 1979,
+      "tagline": "Sustainable catch from the Humboldt current."
+    },
+    {
+      "name": "Il Piccolo Café",
+      "address": "Calle Baquedano 520, Antofagasta, Chile",
+      "phone": "+56 55 261 7788",
+      "url": "https://www.ilpiccolocafe.example.com",
+      "image": "images/piccolo-cafe.svg",
+      "membership": 1,
+      "category": "Café & Bakery",
+      "founded": 2019,
+      "tagline": "Downtown's favorite stop for espresso and fresh pastries."
+    }
+  ]
+}

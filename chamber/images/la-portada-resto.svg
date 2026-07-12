@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Sunset sky -->
+  <rect width="400" height="300" fill="#B5541E"/>
+  <rect width="400" height="300" fill="url(#skyfade)"/>
+  <defs>
+    <linearGradient id="skyfade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D9834B"/>
+      <stop offset="60%" stop-color="#B5541E"/>
+      <stop offset="100%" stop-color="#8f3e15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sun -->
+  <circle cx="300" cy="90" r="34" fill="#E4D8BE"/>
+
+  <!-- Ocean -->
+  <rect x="0" y="200" width="400" height="100" fill="#0d3b45"/>
+  <path d="M0 200 Q50 190 100 200 T200 200 T300 200 T400 200 V210 Q350 200 300 210 T200 210 T100 210 T0 210 Z" fill="#1a4d59"/>
+
+  <!-- La Portada arch silhouette -->
+  <path d="M60 260
+           L60 165
+           Q60 110 115 108
+           Q170 110 170 165
+           L170 260
+           L145 260
+           L145 170
+           Q145 132 115 132
+           Q85 132 85 170
+           L85 260
+           Z"
+        fill="#1c2321"/>
+
+  <!-- small rock detail beside arch -->
+  <ellipse cx="205" cy="250" rx="16" ry="26" fill="#1c2321"/>
+
+  <!-- gentle wave line in front -->
+  <path d="M0 245 Q40 235 80 245 T160 245 T240 245 T320 245 T400 245 V300 H0 Z" fill="#0d3b45" opacity="0.9"/>
+</svg>
