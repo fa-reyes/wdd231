@@ -4,18 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member Directory | Antofagasta Chamber of Commerce</title>
+    <title>Antofagasta Chamber of Commerce | Home</title>
     <meta name="author" content="Fabian Reyes">
-    <meta name="description"
-        content="Browse the member directory of the Antofagasta Chamber of Commerce — mining, tourism, and local businesses">
+    <meta name="description" content="The Antofagasta Chamber of Commerce connects mining, port, tourism, and hospitality businesses across northern Chile. Join today.">
 
     <link rel="icon" href="images/chamber.ico">
 
-    <meta property="og:title" content="Member Directory | Antofagasta Chamber of Commerce">
+    <meta property="og:title" content="Antofagasta Chamber of Commerce">
     <meta property="og:description"
-        content="Browse local mining, port, hospitality, and tourism businesses that belong to the Antofagasta Chamber of Commerce.">
+        content="Connecting mining, port, tourism, and hospitality businesses across northern Chile.">
     <meta property="og:image" content="https://fa-reyes.github.io/wdd231/chamber/images/og-image.png">
-    <meta property="og:url" content="https://fa-reyes.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://fa-reyes.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +25,7 @@
     <link rel="stylesheet" href="styles/chamber-small.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
 
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 
 <body>
@@ -43,30 +42,72 @@
         </div>
         <nav id="primaryNav" class="primary-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="directory-intro">
-            <div>
-                <h1>Member Directory</h1>
-                <p>Explore the businesses and organizations that power Antofagasta's economy — from copper mining and
-                    port
-                    logistics to hotels, cafés, and desert tour operators.</p>
-            </div>
-            <div class="view-toggle" role="group" aria-label="Directory display">
-                <button id="gridBtn" class="view-btn" aria-pressed="false">Grid view</button>
-                <button id="listBtn" class="view-btn" aria-pressed="false">List view</button>
+        <section class="hero">
+            <img src="images/hero.svg" alt="" class="hero-image">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>Antofagasta Chamber of Commerce</h1>
+                    <p>Connecting the mining, port, tourism, and hospitality businesses that drive northern Chile's
+                        economy — since 1962.</p>
+                    <a href="join.html" class="cta-button">Join the Chamber</a>
+                </div>
             </div>
         </section>
 
-        <section id="directory" class="directory grid-view" aria-live="polite">
-            <p class="loading">Loading member directory…</p>
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <ul class="events-list">
+                <li class="event-card">
+                    <p class="event-date"><span class="event-day">22</span><span class="event-month">Jul</span></p>
+                    <div class="event-body">
+                        <h3>Mining &amp; Port Logistics Breakfast</h3>
+                        <p>Networking breakfast with leaders from the region's copper export and shipping sector.
+                        </p>
+                        <p class="event-meta">8:00 AM &middot; Hotel Terrado Suites</p>
+                    </div>
+                </li>
+                <li class="event-card">
+                    <p class="event-date"><span class="event-day">05</span><span class="event-month">Aug</span></p>
+                    <div class="event-body">
+                        <h3>Small Business Growth Workshop</h3>
+                        <p>A hands-on session on financing, permits, and marketing for local hospitality and
+                            tourism operators.</p>
+                        <p class="event-meta">4:00 PM &middot; Chamber Offices, Av. Grecia 1350</p>
+                    </div>
+                </li>
+                <li class="event-card">
+                    <p class="event-date"><span class="event-day">14</span><span class="event-month">Aug</span></p>
+                    <div class="event-body">
+                        <h3>Annual Chamber Gala</h3>
+                        <p>Our flagship evening celebrating member achievements, with awards for community impact.
+                        </p>
+                        <p class="event-meta">7:30 PM &middot; La Portada Restobar</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="weather-section">
+            <h2>Antofagasta Weather</h2>
+            <div id="weather" class="weather" aria-live="polite">
+                <p class="loading">Loading current weather…</p>
+            </div>
+        </section>
+
+        <section class="spotlights-section">
+            <h2>Member Spotlights</h2>
+            <div id="spotlights" class="spotlights" aria-live="polite">
+                <p class="loading">Loading member spotlights…</p>
+            </div>
         </section>
     </main>
 
@@ -75,8 +116,21 @@
             <div class="footer-contact">
                 <p><strong>Antofagasta Chamber of Commerce</strong></p>
                 <p>Av. Grecia 1350, Antofagasta, Chile</p>
-                <p>+56 9 200 1000 · info@antofagastachamber.example.com</p>
+                <p>+56 9 200 1000 · info@antofagastachamber.com</p>
             </div>
+
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+                    <img src="images/youtube.svg" alt="Youtube" class="social-icon">
+                </a>
+            </div>
+
             <div class="footer-dev">
                 <p>Fabian Reyes</p>
                 <p>WDD 231 &mdash; Web Frontend Development I</p>

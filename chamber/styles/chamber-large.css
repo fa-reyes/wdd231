@@ -2,51 +2,51 @@
     h1 {
         font-size: 2.4rem;
     }
-    
+
     h2 {
         font-size: 1.7rem;
     }
-    
+
     .header-inner {
         padding: 1rem 1.5rem;
     }
-    
+
     .brand-logo {
         width: 50px;
         height: 50px;
     }
-    
+
     .brand-name {
         font-size: 1.2rem;
     }
-    
+
     .brand-name small {
         font-size: 0.78rem;
     }
-    
+
     .menu-toggle {
         display: none;
     }
-    
+
     .primary-nav {
         max-height: none;
         overflow: visible;
         border-top: none;
     }
-    
+
     .primary-nav ul {
         flex-direction: row;
         justify-content: flex-end;
         gap: 1.75rem;
         padding: 0 1.5rem;
     }
-    
+
     .primary-nav a {
         border-bottom: none;
         padding: 0.35rem 0.1rem;
         position: relative;
     }
-    
+
     .primary-nav a.active::after {
         content: "";
         position: absolute;
@@ -56,11 +56,11 @@
         height: 2px;
         background-color: var(--color-copper-light);
     }
-    
+
     main {
         padding: 2.5rem 1.5rem 4rem;
     }
-    
+
     .directory-intro {
         display: flex;
         align-items: flex-end;
@@ -68,35 +68,90 @@
         gap: 2rem;
         margin-bottom: 2rem;
     }
-    
+
     .directory-intro>div:first-child {
         max-width: 60ch;
     }
-    
+
     .view-toggle {
         margin-top: 0;
         flex-shrink: 0;
     }
-    
+
     .directory.grid-view {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
-    
+
+    .hero {
+        margin: -2.5rem -1.5rem 3rem;
+    }
+
+    .hero-image {
+        height: 420px;
+    }
+
+    .hero-content {
+        padding: 2rem 3rem 2.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero-content p {
+        font-size: 1.05rem;
+        max-width: 55ch;
+    }
+
+    .events-list {
+        flex-direction: row;
+    }
+
+    .event-card {
+        flex: 1;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .weather {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    .weather-current {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-right: 1px dashed var(--color-line);
+        padding-right: 2rem;
+    }
+
+    .weather-forecast {
+        flex: 1;
+    }
+
+    .spotlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .footer-inner {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
         padding: 2.25rem 1.5rem;
     }
-    
+
     .footer-dev {
         border-top: none;
         padding-top: 0;
         text-align: right;
     }
 }
-    
+
 @media (min-width: 1000px) {
     .directory.grid-view {
         grid-template-columns: repeat(3, 1fr);

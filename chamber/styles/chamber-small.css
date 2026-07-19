@@ -10,7 +10,7 @@
     --color-line: #d8cdb4;
     --font-main: 'Roboto', sans-serif;
     --font-body: "Work Sans", Arial, sans-serif;
-    --font-mono: "IBM Plex Mono", "Courier New", monospace;    
+    --font-mono: "IBM Plex Mono", "Courier New", monospace;
     --content-width: 1200px;
     --radius: 10px;
 }
@@ -38,13 +38,13 @@ svg {
     display: block;
     max-width: 100%;
 }
-    
+
 body {
     font-family: var(--font-body);
     background-color: var(--color-cream);
     color: var(--color-ink);
 }
-    
+
 h1,
 h2,
 h3 {
@@ -52,27 +52,27 @@ h3 {
     color: var(--color-ocean-deep);
     line-height: 1.15;
 }
-    
+
 h1 {
     font-size: 1.9rem;
     font-weight: 600;
 }
-    
+
 h2 {
     font-size: 1.4rem;
     font-weight: 600;
 }
-    
+
 p {
     max-width: 65ch;
 }
-    
+
 a:focus-visible,
 button:focus-visible {
     outline: 3px solid var(--color-copper);
     outline-offset: 2px;
 }
-    
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -84,12 +84,12 @@ button:focus-visible {
     white-space: nowrap;
     border: 0;
 }
-    
+
 header {
     background-color: var(--color-ocean-deep);
     color: var(--color-cream);
 }
-    
+
 .header-inner {
     max-width: var(--content-width);
     margin: 0 auto;
@@ -98,19 +98,19 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-    
+
 .brand {
     display: flex;
     align-items: center;
     gap: 0.65rem;
 }
-    
+
 .brand-logo {
     width: 42px;
     height: 42px;
     border-radius: 8px;
 }
-    
+
 .brand-name {
     font-family: var(--font-display);
     font-weight: 600;
@@ -118,7 +118,7 @@ header {
     line-height: 1.2;
     color: var(--color-cream);
 }
-    
+
 .brand-name small {
     display: block;
     font-family: var(--font-body);
@@ -128,14 +128,14 @@ header {
     color: var(--color-sand);
     text-transform: uppercase;
 }
-    
+
 .menu-toggle {
     width: 40px;
     height: 40px;
     display: grid;
     place-items: center;
 }
-    
+
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -146,34 +146,34 @@ header {
     position: relative;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
-    
+
 .hamburger::before,
 .hamburger::after {
     content: "";
     position: absolute;
     left: 0;
 }
-    
+
 .hamburger::before {
     top: -7px;
 }
-    
+
 .hamburger::after {
     top: 7px;
 }
-    
+
 .menu-toggle[aria-expanded="true"] .hamburger {
     background-color: transparent;
 }
-    
+
 .menu-toggle[aria-expanded="true"] .hamburger::before {
     transform: translateY(7px) rotate(45deg);
 }
-    
+
 .menu-toggle[aria-expanded="true"] .hamburger::after {
     transform: translateY(-7px) rotate(-45deg);
 }
-    
+
 .primary-nav {
     max-height: 0;
     overflow: hidden;
@@ -181,11 +181,11 @@ header {
     background-color: var(--color-ocean-deep);
     border-top: 1px solid rgba(250, 247, 242, 0.15);
 }
-    
+
 .primary-nav.open {
     max-height: 300px;
 }
-    
+
 .primary-nav ul {
     max-width: var(--content-width);
     margin: 0 auto;
@@ -193,39 +193,39 @@ header {
     display: flex;
     flex-direction: column;
 }
-    
+
 .primary-nav a {
     display: block;
     padding: 0.65rem 0.25rem;
     font-weight: 500;
     border-bottom: 1px solid rgba(250, 247, 242, 0.1);
 }
-    
+
 .primary-nav a.active {
     color: var(--color-copper-lighter);
 }
-    
+
 main {
     max-width: var(--content-width);
     margin: 0 auto;
     padding: 1.5rem 1rem 3rem;
 }
-    
+
 .directory-intro {
     margin-bottom: 1.5rem;
 }
-    
+
 .directory-intro p {
     color: #44514f;
     margin-top: 0.5rem;
 }
-    
+
 .view-toggle {
     display: flex;
     gap: 0.5rem;
     margin-top: 1.1rem;
 }
-    
+
 .view-btn {
     padding: 0.5rem 1rem;
     border-radius: 999px;
@@ -235,24 +235,24 @@ main {
     color: var(--color-ocean-deep);
     background-color: transparent;
 }
-    
+
 .view-btn.active {
     background-color: var(--color-ocean-deep);
     color: var(--color-cream);
 }
-    
+
 .directory {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.1rem;
 }
-    
+
 .loading {
     font-family: var(--font-mono);
     font-size: 0.9rem;
     color: var(--color-sky);
 }
-    
+
 .member-card {
     background-color: #fff;
     border: 1px solid var(--color-line);
@@ -261,14 +261,14 @@ main {
     display: flex;
     flex-direction: column;
 }
-    
+
 .member-card img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     background-color: var(--color-sand);
 }
-    
+
 .member-card-body {
     padding: 1rem;
     display: flex;
@@ -276,18 +276,18 @@ main {
     gap: 0.4rem;
     flex-grow: 1;
 }
-    
+
 .member-card-top {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: 0.5rem;
 }
-    
+
 .member-card h3 {
     font-size: 1.05rem;
 }
-    
+
 .badge {
     flex-shrink: 0;
     font-family: var(--font-mono);
@@ -298,22 +298,22 @@ main {
     border-radius: 999px;
     white-space: nowrap;
 }
-    
+
 .badge-1 {
     background-color: var(--color-sand);
     color: var(--color-ocean-deep);
 }
-    
+
 .badge-2 {
     background-color: var(--color-sky);
     color: #fff;
 }
-    
+
 .badge-3 {
     background-color: var(--color-copper);
     color: #fff;
 }
-    
+
 .member-category {
     font-size: 0.78rem;
     text-transform: uppercase;
@@ -321,12 +321,12 @@ main {
     color: var(--color-sky);
     font-weight: 600;
 }
-    
+
 .member-tagline {
     font-size: 0.88rem;
     color: #44514f;
 }
-    
+
 .member-meta {
     font-family: var(--font-mono);
     font-size: 0.78rem;
@@ -338,30 +338,30 @@ main {
     flex-direction: column;
     gap: 0.2rem;
 }
-    
+
 .member-meta a {
     color: var(--color-copper);
     font-weight: 600;
 }
-    
+
 .directory.list-view {
     grid-template-columns: 1fr;
 }
-    
+
 .directory.list-view .member-card {
     flex-direction: row;
 }
-    
+
 .directory.list-view .member-card img {
     width: 130px;
     aspect-ratio: 1 / 1;
     flex-shrink: 0;
 }
-    
+
 .directory.list-view .member-card-body {
     padding: 0.85rem 1rem;
 }
-    
+
 .directory.list-view .member-meta {
     flex-direction: row;
     flex-wrap: wrap;
@@ -369,12 +369,251 @@ main {
     border-top: none;
     padding-top: 0.15rem;
 }
-    
+
+.hero {
+    position: relative;
+    margin: -1.5rem -1rem 2rem;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(0deg, rgba(13, 59, 69, 0.88) 0%, rgba(13, 59, 69, 0.15) 70%);
+}
+
+.hero-content {
+    padding: 1.25rem 1.25rem 1.5rem;
+    color: var(--color-cream);
+}
+
+.hero-content h1 {
+    color: var(--color-cream);
+    font-size: 1.6rem;
+}
+
+.hero-content p {
+    margin-top: 0.5rem;
+    font-size: 0.92rem;
+    color: var(--color-sand);
+    max-width: 50ch;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    background-color: var(--color-copper);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+    background-color: var(--color-copper-light);
+    transform: translateY(-2px);
+}
+
+.events-section,
+.weather-section,
+.spotlights-section {
+    margin-bottom: 2.5rem;
+}
+
+.events-section h2,
+.weather-section h2,
+.spotlights-section h2 {
+    margin-bottom: 1rem;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.event-card {
+    display: flex;
+    gap: 1rem;
+    background-color: #fff;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    padding: 0.9rem;
+}
+
+.event-date {
+    flex-shrink: 0;
+    width: 56px;
+    text-align: center;
+    background-color: var(--color-ocean-deep);
+    color: var(--color-cream);
+    border-radius: 8px;
+    padding: 0.4rem 0.2rem;
+}
+
+.event-day {
+    display: block;
+    font-family: var(--font-main);
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.event-month {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-sand);
+}
+
+.event-body h3 {
+    font-size: 1rem;
+}
+
+.event-body p {
+    font-size: 0.85rem;
+    color: #44514f;
+    margin-top: 0.25rem;
+}
+
+.event-meta {
+    font-family: var(--font-mono);
+    font-size: 0.75rem !important;
+    color: var(--color-sky) !important;
+    margin-top: 0.4rem !important;
+}
+
+.weather {
+    background-color: #fff;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    padding: 1rem;
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px dashed var(--color-line);
+    margin-bottom: 0.85rem;
+}
+
+.weather-temp {
+    font-family: var(--font-main);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-ocean-deep);
+    line-height: 1.1;
+}
+
+.weather-desc {
+    font-size: 0.85rem;
+    color: #44514f;
+    text-transform: capitalize;
+}
+
+.weather-forecast {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.forecast-day {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+}
+
+.forecast-label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--color-sky);
+}
+
+.forecast-temp {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* ----- Spotlights ----- */
+.spotlights {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+}
+
+.spotlight-card {
+    background-color: #fff;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.spotlight-card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background-color: var(--color-sand);
+}
+
+.spotlight-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex-grow: 1;
+}
+
+.spotlight-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.spotlight-card h3 {
+    font-size: 1.05rem;
+}
+
+.spotlight-meta {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--color-ink);
+}
+
+.spotlight-body a {
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--color-line);
+    color: var(--color-copper);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
 footer {
     background-color: var(--color-ocean-deep);
     color: var(--color-sand);
 }
-    
+
 .footer-inner {
     max-width: var(--content-width);
     margin: 0 auto;
@@ -384,7 +623,7 @@ footer {
     gap: 1.25rem;
     font-size: 0.85rem;
 }
-    
+
 .footer-inner p {
     margin: 0.15rem 0;
 }
@@ -416,7 +655,7 @@ footer {
     height: 3rem;
     display: block;
 }
-    
+
 .footer-dev {
     font-family: var(--font-mono);
     font-size: 0.75rem;

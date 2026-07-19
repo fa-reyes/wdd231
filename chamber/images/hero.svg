@@ -1,0 +1,51 @@
+<svg viewBox="0 0 1200 500" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">Antofagasta coastline with desert cliffs, port cranes, and the Pacific Ocean</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f6e7c"/>
+      <stop offset="55%" stop-color="#5a97a3"/>
+      <stop offset="100%" stop-color="#e6a877"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d3b45"/>
+      <stop offset="100%" stop-color="#092a31"/>
+    </linearGradient>
+    <linearGradient id="dune" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d9834b"/>
+      <stop offset="100%" stop-color="#b5541e"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="500" fill="url(#sky)"/>
+
+  <circle cx="980" cy="120" r="70" fill="#faf7f2" opacity="0.9"/>
+
+  <path d="M0,190 C150,150 300,210 480,180 C650,150 800,200 1000,170 C1080,158 1150,175 1200,165 L1200,320 L0,320 Z" fill="#e4d8be" opacity="0.55"/>
+
+  <path d="M0,260 C180,210 320,270 520,235 C700,205 880,255 1200,225 L1200,340 L0,340 Z" fill="url(#dune)"/>
+
+  <path d="M0,300 C200,260 380,300 600,275 C820,250 1000,290 1200,270 L1200,340 L0,340 Z" fill="#b5541e" opacity="0.85"/>
+
+  <rect x="0" y="330" width="1200" height="170" fill="url(#sea)"/>
+  <path d="M0,330 C120,318 220,342 340,330 C460,318 560,342 680,330 C800,318 900,342 1020,330 C1120,320 1160,335 1200,330 L1200,500 L0,500 Z" fill="#134753"/>
+
+  <g opacity="0.9">
+    <rect x="860" y="200" width="6" height="110" fill="#1c2321"/>
+    <line x1="863" y1="205" x2="940" y2="225" stroke="#1c2321" stroke-width="5" stroke-linecap="round"/>
+    <line x1="863" y1="205" x2="800" y2="235" stroke="#1c2321" stroke-width="5" stroke-linecap="round"/>
+    <rect x="850" y="308" width="26" height="16" fill="#1c2321"/>
+  </g>
+  <g opacity="0.85">
+    <rect x="940" y="230" width="5" height="80" fill="#1c2321"/>
+    <line x1="942" y1="234" x2="1000" y2="250" stroke="#1c2321" stroke-width="4" stroke-linecap="round"/>
+    <line x1="942" y1="234" x2="900" y2="256" stroke="#1c2321" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g fill="#0d3b45" opacity="0.75">
+    <rect x="1020" y="270" width="150" height="42" rx="2"/>
+    <rect x="1040" y="255" width="30" height="18" rx="2"/>
+  </g>
+
+  <path d="M20,340 C60,330 100,344 140,336 C180,328 210,342 250,335" stroke="#faf7f2" stroke-width="4" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M900,360 C950,350 1000,364 1050,356 C1100,348 1140,362 1190,355" stroke="#faf7f2" stroke-width="4" fill="none" opacity="0.35" stroke-linecap="round"/>
+</svg>
