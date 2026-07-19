@@ -387,12 +387,12 @@ main {
     inset: 0;
     display: flex;
     align-items: flex-end;
+    background-color: var(--color-ocean-deep);
     background: linear-gradient(0deg, rgba(13, 59, 69, 0.88) 0%, rgba(13, 59, 69, 0.15) 70%);
 }
 
 .hero-content {
     padding: 1.25rem 1.25rem 1.5rem;
-    color: var(--color-cream);
 }
 
 .hero-content h1 {
