@@ -150,10 +150,42 @@
         padding-top: 0;
         text-align: right;
     }
+
+    .join-layout {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.5rem;
+    }
+    
+    .join-form-section {
+        flex: 2;
+        padding: 2rem;
+    }
+    
+    .membership-cards {
+        flex: 1;
+        position: sticky;
+        top: 1.5rem;
+    }
+    
+    .summary-row {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 1rem;
+    }
 }
 
 @media (min-width: 1000px) {
     .directory.grid-view {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .join-form-section {
+        flex: 3;
+    }
+    
+    .membership-cards {
+        flex: 2;
     }
 }

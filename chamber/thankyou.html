@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Antofagasta Chamber of Commerce</title>
+    <meta name="author" content="Fabian Reyes">
+    <meta name="description" content="Thank you for applying to join the Antofagasta Chamber of Commerce.">
+
+    <link rel="icon" href="images/chamber.ico">
+
+    <meta property="og:title" content="Thank You | Antofagasta Chamber of Commerce">
+    <meta property="og:description" content="Thank you for applying to join the Antofagasta Chamber of Commerce.">
+    <meta property="og:image" content="https://fa-reyes.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://fa-reyes.github.io/wdd231/chamber/thankyou.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <img src="images/logo.svg" alt="" class="brand-logo">
+                <span class="brand-name">Antofagasta<small>Chamber of Commerce</small></span>
+            </a>
+            <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="primaryNav">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        <nav id="primaryNav" class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou-section">
+            <h1>Thank You for Applying!</h1>
+            <p>We've received your membership application and a member of our team will be in touch shortly.
+                Here's a summary of what you submitted:</p>
+
+            <dl class="submission-summary" id="submissionSummary">
+                <div class="summary-row">
+                    <dt>First Name</dt>
+                    <dd id="outFirstName"></dd>
+                </div>
+                <div class="summary-row">
+                    <dt>Last Name</dt>
+                    <dd id="outLastName"></dd>
+                </div>
+                <div class="summary-row">
+                    <dt>Email</dt>
+                    <dd id="outEmail"></dd>
+                </div>
+                <div class="summary-row">
+                    <dt>Mobile Number</dt>
+                    <dd id="outMobile"></dd>
+                </div>
+                <div class="summary-row">
+                    <dt>Business/Organization Name</dt>
+                    <dd id="outBusinessName"></dd>
+                </div>
+                <div class="summary-row">
+                    <dt>Submitted On</dt>
+                    <dd id="outTimestamp"></dd>
+                </div>
+            </dl>
+
+            <a href="index.html" class="cta-button">Return to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <p><strong>Antofagasta Chamber of Commerce</strong></p>
+                <p>Av. Grecia 1350, Antofagasta, Chile</p>
+                <p>+56 9 200 1000 · info@antofagastachamber.com</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+                    <img src="images/youtube.svg" alt="Youtube" class="social-icon">
+                </a>
+            </div>
+
+            <div class="footer-dev">
+                <p>Fabian Reyes</p>
+                <p>WDD 231 &mdash; Web Frontend Development I</p>
+                <p>&copy; <span id="year"></span> Antofagasta Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

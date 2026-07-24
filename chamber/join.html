@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Antofagasta Chamber of Commerce</title>
+    <meta name="author" content="Fabian Reyes">
+    <meta name="description" content="Join the Antofagasta Chamber of Commerce — connect with mining, port, tourism, and hospitality businesses across northern Chile.">
+
+    <link rel="icon" href="images/chamber.ico">
+
+    <meta property="og:title" content="Join | Antofagasta Chamber of Commerce">
+    <meta property="og:description"
+        content="Become a member of the Antofagasta Chamber of Commerce and grow your business.">
+    <meta property="og:image" content="https://fa-reyes.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://fa-reyes.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <img src="images/logo.svg" alt="" class="brand-logo">
+                <span class="brand-name">Antofagasta<small>Chamber of Commerce</small></span>
+            </a>
+            <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="primaryNav">
+                <span class="sr-only">Menu</span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        <nav id="primaryNav" class="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="join-intro">
+            <h1>Join the Chamber</h1>
+            <p>Become part of the network that connects Antofagasta's mining, port, tourism, and hospitality
+                businesses. Fill out the application below and choose the membership level that fits your
+                organization.</p>
+        </section>
+
+        <div class="join-layout">
+            <section class="join-form-section" aria-labelledby="formHeading">
+                <h2 id="formHeading">Membership Application</h2>
+                <form action="thankyou.html" method="get">
+
+                    <label for="firstName">First Name
+                        <input type="text" id="firstName" name="firstName" title="Your first name" required
+                            autocomplete="given-name" placeholder="Juana">
+                    </label>
+
+                    <label for="lastName">Last Name
+                        <input type="text" id="lastName" name="lastName" title="Your last name" required
+                            autocomplete="family-name" placeholder="Pérez">
+                    </label>
+
+                    <label for="orgTitle">Organizational Title
+                        <input type="text" id="orgTitle" name="orgTitle"
+                            title="Your title within the organization: letters, hyphens, and spaces only, minimum 7 characters"
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"
+                            placeholder="Operations Manager">
+                    </label>
+
+                    <label for="email">Email Address
+                        <input type="email" id="email" name="email" title="Your email address" required
+                            autocomplete="email" placeholder="example@email.com">
+                    </label>
+
+                    <label for="mobile">Mobile Phone Number
+                        <input type="tel" id="mobile" name="mobile" title="Your mobile phone number" required
+                            autocomplete="tel" placeholder="+56 9 1234 5678">
+                    </label>
+
+                    <label for="businessName">Business/Organization Name
+                        <input type="text" id="businessName" name="businessName"
+                            title="The name of your business or organization" required autocomplete="organization"
+                            placeholder="Atacama Desert Tours">
+                    </label>
+
+                    <label for="membershipLevel">Membership Level
+                        <select id="membershipLevel" name="membershipLevel" title="Select a membership level" required>
+                            <option value="" disabled selected>Select a level&hellip;</option>
+                            <option value="np">NP Membership (Non-Profit &mdash; No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="businessDescription">Business/Organization Description
+                        <textarea id="businessDescription" name="businessDescription"
+                            title="A brief description of your business or organization" rows="5"
+                            placeholder="Tell us what your organization does..."></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Submit Application">
+                </form>
+            </section>
+
+            <aside class="membership-cards" aria-label="Membership levels">
+                <article class="membership-card card-np">
+                    <h3>NP Membership</h3>
+                    <p class="card-price">No Fee</p>
+                    <p>For registered non-profit organizations serving the Antofagasta community.</p>
+                    <button type="button" class="card-link" data-modal="modal-np">Learn more</button>
+                </article>
+
+                <article class="membership-card card-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p class="card-price">Entry Level</p>
+                    <p>A great starting point for small and growing businesses.</p>
+                    <button type="button" class="card-link" data-modal="modal-bronze">Learn more</button>
+                </article>
+
+                <article class="membership-card card-silver">
+                    <h3>Silver Membership</h3>
+                    <p class="card-price">Mid Tier</p>
+                    <p>Expanded visibility and networking for established businesses.</p>
+                    <button type="button" class="card-link" data-modal="modal-silver">Learn more</button>
+                </article>
+
+                <article class="membership-card card-gold">
+                    <h3>Gold Membership</h3>
+                    <p class="card-price">Premium</p>
+                    <p>Maximum exposure and benefits for industry-leading organizations.</p>
+                    <button type="button" class="card-link" data-modal="modal-gold">Learn more</button>
+                </article>
+            </aside>
+        </div>
+    </main>
+
+    <dialog id="modal-np" class="membership-modal">
+        <h2>NP Membership</h2>
+        <p class="modal-price">No Fee</p>
+        <ul>
+            <li>Free listing in the online member directory</li>
+            <li>Access to Chamber networking events</li>
+            <li>Eligibility for community grant workshops</li>
+            <li>Newsletter and volunteer opportunity announcements</li>
+        </ul>
+        <button type="button" class="modal-close" autofocus>Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze" class="membership-modal">
+        <h2>Bronze Membership</h2>
+        <p class="modal-price">Entry Level</p>
+        <ul>
+            <li>Standard listing in the online member directory</li>
+            <li>Access to Chamber networking events</li>
+            <li>Discounted registration for training workshops</li>
+            <li>Monthly newsletter feature eligibility</li>
+        </ul>
+        <button type="button" class="modal-close" autofocus>Close</button>
+    </dialog>
+
+    <dialog id="modal-silver" class="membership-modal">
+        <h2>Silver Membership</h2>
+        <p class="modal-price">Mid Tier</p>
+        <ul>
+            <li>Enhanced directory listing with logo and tagline</li>
+            <li>Priority access to Chamber networking events</li>
+            <li>20% discount on all Chamber-hosted events</li>
+            <li>Quarterly spotlight rotation on the home page</li>
+            <li>Access to member-only training sessions</li>
+        </ul>
+        <button type="button" class="modal-close" autofocus>Close</button>
+    </dialog>
+
+    <dialog id="modal-gold" class="membership-modal">
+        <h2>Gold Membership</h2>
+        <p class="modal-price">Premium</p>
+        <ul>
+            <li>Featured directory listing with priority placement</li>
+            <li>Guaranteed monthly spotlight on the home page</li>
+            <li>Free registration for all Chamber-hosted events</li>
+            <li>Advertising space in the Chamber newsletter</li>
+            <li>Dedicated account representative</li>
+            <li>Invitations to exclusive Gold-tier networking dinners</li>
+        </ul>
+        <button type="button" class="modal-close" autofocus>Close</button>
+    </dialog>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <p><strong>Antofagasta Chamber of Commerce</strong></p>
+                <p>Av. Grecia 1350, Antofagasta, Chile</p>
+                <p>+56 9 200 1000 · info@antofagastachamber.com</p>
+            </div>
+
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <img src="images/twitter.svg" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Youtube">
+                    <img src="images/youtube.svg" alt="Youtube" class="social-icon">
+                </a>
+            </div>
+
+            <div class="footer-dev">
+                <p>Fabian Reyes</p>
+                <p>WDD 231 &mdash; Web Frontend Development I</p>
+                <p>&copy; <span id="year"></span> Antofagasta Chamber of Commerce</p>
+                <p>Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
