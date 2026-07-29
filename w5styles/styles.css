@@ -1,0 +1,186 @@
+:root {
+    --court-night: #15171c;
+    --leather-orange: #ff6a1a;
+    --charcoal-panel: #22252c;
+    --baseline-white: #f2f0e9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--court-night);
+    color: var(--baseline-white);
+    font-family: "Inter", sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--leather-orange);
+    margin: 0;
+}
+
+.site-header {
+    padding: 3rem 1.5rem 2.5rem;
+    border-bottom: 3px solid var(--leather-orange);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.eyebrow {
+    font-family: "Oswald", sans-serif;
+    color: var(--baseline-white);
+    opacity: 0.6;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin: 0 0 0.5rem;
+}
+
+.site-header h1 {
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+}
+
+.tagline {
+    margin-top: 0.75rem;
+    max-width: 55ch;
+    opacity: 0.85;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.plan-section {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(242, 240, 233, 0.15);
+}
+
+.plan-section h2 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.num {
+    font-size: 1rem;
+    color: var(--baseline-white);
+    opacity: 0.4;
+}
+
+.callout-name {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.4rem;
+    color: var(--leather-orange);
+}
+
+.scenario-list {
+  padding-left: 1.2rem;
+}
+
+.scenario-list li {
+    margin-bottom: 0.6rem;
+}
+
+.swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.25rem;
+}
+
+.swatch {
+    padding: 1.25rem 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    min-height: 100px;
+    justify-content: flex-end;
+    border: 1px solid rgba(242, 240, 233, 0.2);
+}
+
+.swatch .hex {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.swatch .label {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.type-sample {
+    margin-bottom: 1.5rem;
+}
+
+.type-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.6;
+    margin-bottom: 0.4rem;
+}
+
+.type-demo.oswald {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.6rem;
+    color: var(--leather-orange);
+}
+
+.type-demo.inter {
+    font-family: "Inter", sans-serif;
+    font-size: 1.05rem;
+    max-width: 60ch;
+}
+
+.wireframe-img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(242, 240, 233, 0.2);
+    display: block;
+}
+
+.wireframe-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.wireframe-slot {
+    margin: 0;
+}
+
+.wireframe-slot figcaption {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 2rem 1.5rem 3rem;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+@media (max-width: 500px) {
+    .site-header {
+        padding: 2rem 1.25rem 2rem;
+    }
+    .plan-section {
+        padding: 2rem 0;
+    }
+}
