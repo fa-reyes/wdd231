@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fabian Reyes">
+    <meta name="description" content="Browse all 30 current NBA teams by conference, and click any team to see its founding year, arena, and franchise legends.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Teams — Hoop History">
+    <meta property="og:description" content="Browse all 30 current NBA teams and click any team card for more detail.">
+    <meta property="og:image" content="images/favicon.svg">
+    <title>Teams — Hoop History</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 720px)">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+                    <circle cx="32" cy="32" r="30" fill="#FF6A1A" />
+                    <g fill="none" stroke="#15171C" stroke-width="3" stroke-linecap="round">
+                        <path d="M2 32h60" />
+                        <path d="M32 2v60" />
+                        <path d="M11 10c9 10 9 34 0 44" />
+                        <path d="M53 10c-9 10-9 34 0 44" />
+                    </g>
+                </svg>
+                <span class="brand-name">Hoop History</span>
+            </a>
+            <div class="header-controls">
+                <button type="button" class="theme-toggle" aria-pressed="false"
+                    aria-label="Switch to light theme">☀️</button>
+                <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="visually-hidden">Menu</span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+            </div>
+        </div>
+        <nav class="main-nav" id="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home &amp; History</a></li>
+                <li><a href="structure.html">League Structure</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="section">
+            <div class="wrap">
+                <p class="section-eyebrow">03 — Every Franchise</p>
+                <h1>Current NBA teams</h1>
+                <p class="section-lead">Filter by conference and click any card for founding year, home arena, and
+                    franchise legends. Tap the star to save a favorite team on this device.</p>
+
+                <div class="filter-bar" id="filter-bar">
+                    <button type="button" class="filter-btn" data-filter="All" aria-pressed="true">All teams</button>
+                    <button type="button" class="filter-btn" data-filter="Eastern" aria-pressed="false">Eastern</button>
+                    <button type="button" class="filter-btn" data-filter="Western" aria-pressed="false">Western</button>
+                </div>
+
+                <p class="section-lead" id="results-count" aria-live="polite">Loading teams…</p>
+
+                <div class="card-grid" id="teams-grid" aria-live="polite">
+                    <p class="status-msg">Loading team data…</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-backdrop" id="team-modal">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-header">
+                <h2 id="modal-title">Team name</h2>
+                <button type="button" class="modal-close" aria-label="Close dialog">✕</button>
+            </div>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="structure.html">League Structure</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="form.html">Contact</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="#" id="video-link">Project video walkthrough</a></li>
+            </ul>
+            <p>&copy; <span id="year"></span> Hoop History. Built for WDD 231.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/teams.js"></script>
+</body>
+
+</html>

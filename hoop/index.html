@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fabian Reyes">
+    <meta name="description" content="Hoop History traces the NBA from its 1946 founding through today, and lets you explore the league's structure and every current team.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hoop History — The NBA, Then and Now">
+    <meta property="og:description" content="Explore the history of the NBA, how the league is structured today, and every current team.">
+    <meta property="og:image" content="images/favicon.svg">
+    <title>Hoop History — The NBA, Then and Now</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 720px)">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+                    <circle cx="32" cy="32" r="30" fill="#FF6A1A" />
+                    <g fill="none" stroke="#15171C" stroke-width="3" stroke-linecap="round">
+                        <path d="M2 32h60" />
+                        <path d="M32 2v60" />
+                        <path d="M11 10c9 10 9 34 0 44" />
+                        <path d="M53 10c-9 10-9 34 0 44" />
+                    </g>
+                </svg>
+                <span class="brand-name">Hoop History</span>
+            </a>
+            <div class="header-controls">
+                <button type="button" class="theme-toggle" aria-pressed="false"
+                    aria-label="Switch to light theme">☀️</button>
+                <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="visually-hidden">Menu</span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+            </div>
+        </div>
+        <nav class="main-nav" id="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home &amp; History</a></li>
+                <li><a href="structure.html">League Structure</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="hero">
+            <div class="wrap hero-inner">
+                <div>
+                    <p class="hero-eyebrow">WDD 231 Final Project</p>
+                    <h1>The NBA, from tip-off to today</h1>
+                    <p class="hero-lead">Hoop History walks through eight decades of professional basketball, breaks
+                        down how the modern league is organized, and lets you browse all 30 current teams.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="structure.html">See the league structure</a>
+                        <a class="btn btn-outline" href="teams.html">Browse the teams</a>
+                    </div>
+                </div>
+                <div class="hero-art" aria-hidden="true">
+                    <svg viewBox="0 0 300 300" width="100%">
+                        <circle cx="150" cy="150" r="120" fill="none" stroke="#FF6A1A" stroke-width="3" opacity="0.5" />
+                        <circle cx="150" cy="150" r="80" fill="#FF6A1A" />
+                        <g fill="none" stroke="#15171C" stroke-width="4" stroke-linecap="round">
+                            <path d="M70 150h160" />
+                            <path d="M150 70v160" />
+                            <path d="M92 92c22 26 22 90 0 116" />
+                            <path d="M208 92c-22 26-22 90 0 116" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="history">
+            <div class="wrap">
+                <p class="section-eyebrow">01 — The Story So Far</p>
+                <h2>A short history of the NBA</h2>
+                <p class="section-lead">The league's identity has shifted with every generation of players who reshaped
+                    how the game is played. Here's the arc, decade by decade.</p>
+
+                <div class="card-grid">
+                    <article class="card">
+                        <h3>1946 — The BAA is founded</h3>
+                        <p>Eleven arena owners in the Northeast and Midwest formed the Basketball Association of
+                            America, betting that pro basketball could fill arenas on nights hockey wasn't playing.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>1949 — The NBA is born</h3>
+                        <p>The BAA merged with the rival National Basketball League to form the National Basketball
+                            Association, unifying the sport's top talent under one league for the first time.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>1950s-60s — The Russell era</h3>
+                        <p>Bill Russell's Celtics won 11 titles in 13 seasons, built on a defensive philosophy that
+                            proved championships could be won without the league's leading scorer.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>1976 — The ABA merger</h3>
+                        <p>Four American Basketball Association teams joined the NBA, bringing the three-point line, the
+                            slam dunk contest's spirit, and a faster, more athletic style with them.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>1980s — Magic, Bird, and TV</h3>
+                        <p>The Lakers-Celtics rivalry, carried by Magic Johnson and Larry Bird, coincided with the NBA's
+                            first prime-time network deals and turned the league into a national obsession.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>1990s — The Jordan era</h3>
+                        <p>Michael Jordan's Bulls won six titles in eight years and turned the NBA into a global
+                            product, expanding the league's reach well beyond North America.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>2000s-2010s — Pace and space</h3>
+                        <p>Analytics-driven offenses prioritized three-point shooting and ball movement over traditional
+                            post play, led by teams like the Warriors' dynasty of the mid-2010s.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Today — A global, positionless game</h3>
+                        <p>Modern rosters blend size and skill at every position, drawing talent from every continent
+                            and playing a faster, more perimeter-oriented style than any prior era.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="structure.html">League Structure</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="form.html">Contact</a></li>
+                <li><a href="attributions.html">Attributions</a></li>
+                <li><a href="#" id="video-link">Project video walkthrough</a></li>
+            </ul>
+            <p>&copy; <span id="year"></span> Hoop History. Built for WDD 231.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
