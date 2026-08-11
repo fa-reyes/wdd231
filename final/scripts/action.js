@@ -38,4 +38,6 @@ function renderSubmission() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", renderSubmission);
+export function initAction() {
+    renderSubmission();
+}

@@ -8,8 +8,26 @@ function setFooterYear() {
     }
 }
 
+async function initPageFeatures() {
+    if (document.querySelector("#teams-grid")) {
+        const { initTeams } = await import("./teams.js");
+        initTeams();
+    }
+ 
+    if (document.querySelector("#contact-form")) {
+        const { initForm } = await import("./form.js");
+        initForm();
+    }
+ 
+    if (document.querySelector("#submission-output")) {
+        const { initAction } = await import("./action.js");
+        initAction();
+    }
+}
+ 
 document.addEventListener("DOMContentLoaded", () => {
     initTheme();
     initNav();
     setFooterYear();
+    initPageFeatures();
 });

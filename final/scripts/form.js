@@ -33,5 +33,3 @@ function initForm() {
     if (!form) return;
     form.addEventListener("submit", handleSubmit);
 }
- 
-document.addEventListener("DOMContentLoaded", initForm);

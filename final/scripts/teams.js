@@ -166,5 +166,3 @@ function initTeams() {
     initModal();
     loadTeams();
 }
-
-document.addEventListener("DOMContentLoaded", initTeams);
