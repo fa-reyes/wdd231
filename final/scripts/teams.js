@@ -51,7 +51,7 @@ function renderTeams() {
         .map((team) => {
             const isFav = favId === String(team.id);
             return `
-                <article class="team-card" style="--team-color:${team.color}" data-id="${team.id}" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details for ${team.name}">
+                <article class="team-tile" style="--team-color:${team.color}" data-id="${team.id}" tabindex="0" role="button" aria-haspopup="dialog" aria-label="View details for ${team.name}">
                     <button type="button" class="fav-star" data-id="${team.id}" aria-pressed="${isFav}" aria-label="${isFav ? "Remove" : "Mark"} ${team.name} as favorite team">${isFav ? "★" : "☆"}</button>
                     <span class="abbr">${team.abbreviation}</span>
                     <span class="name">${team.name}</span>
@@ -72,13 +72,13 @@ function openModal(teamId) {
 
     lastFocusedElement = document.activeElement;
 
-    const backdrop = document.querySelector("#team-modal");
-    const modal = backdrop.querySelector(".modal");
+    const backdrop = document.querySelector("#team-dialog");
+    const modal = backdrop.querySelector(".dialog-panel");
     const legendsMarkup = team.legends.map((player) => `<li>${player}</li>`).join("");
 
     modal.style.setProperty("--team-color", team.color);
-    backdrop.querySelector("#modal-title").textContent = team.name;
-    backdrop.querySelector("#modal-body").innerHTML = `
+    backdrop.querySelector("#dialog-title").textContent = team.name;
+    backdrop.querySelector("#dialog-body").innerHTML = `
         <p>${team.blurb}</p>
         <dl>
             <dt>Conference</dt><dd>${team.conference}</dd>
@@ -92,12 +92,12 @@ function openModal(teamId) {
 
     backdrop.classList.add("is-open");
     document.body.style.overflow = "hidden";
-    backdrop.querySelector(".modal-close").focus();
+    backdrop.querySelector(".dialog-dismiss").focus();
     document.addEventListener("keydown", handleModalKeydown);
 }
 
 function closeModal() {
-    const backdrop = document.querySelector("#team-modal");
+    const backdrop = document.querySelector("#team-dialog");
     backdrop.classList.remove("is-open");
     document.body.style.overflow = "";
     document.removeEventListener("keydown", handleModalKeydown);
@@ -121,14 +121,14 @@ function handleGridClick(event) {
         return;
     }
 
-    const card = event.target.closest(".team-card");
+    const card = event.target.closest(".team-tile");
     if (card) {
         openModal(card.dataset.id);
     }
 }
 
 function handleGridKeydown(event) {
-    const card = event.target.closest(".team-card");
+    const card = event.target.closest(".team-tile");
     if (card && (event.key === "Enter" || event.key === " ")) {
         event.preventDefault();
         openModal(card.dataset.id);
@@ -138,10 +138,10 @@ function handleGridKeydown(event) {
 function initFilters() {
     const filterBar = document.querySelector("#filter-bar");
     filterBar.addEventListener("click", (event) => {
-        const btn = event.target.closest(".filter-btn");
+        const btn = event.target.closest(".filter-chip");
         if (!btn) return;
         filterBar
-            .querySelectorAll(".filter-btn")
+            .querySelectorAll(".filter-chip")
             .forEach((b) => b.setAttribute("aria-pressed", "false"));
         btn.setAttribute("aria-pressed", "true");
         currentFilter = btn.dataset.filter;
@@ -150,8 +150,8 @@ function initFilters() {
 }
 
 function initModal() {
-    const backdrop = document.querySelector("#team-modal");
-    backdrop.querySelector(".modal-close").addEventListener("click", closeModal);
+    const backdrop = document.querySelector("#team-dialog");
+    backdrop.querySelector(".dialog-dismiss").addEventListener("click", closeModal);
     backdrop.addEventListener("click", (event) => {
         if (event.target === backdrop) closeModal();
     });

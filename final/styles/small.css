@@ -267,7 +267,7 @@ img {
     border-bottom-color: var(--accent);
 }
 
-.btn {
+.cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -283,21 +283,21 @@ img {
     text-decoration: none;
 }
 
-.btn-primary {
+.cta-solid {
     background: var(--accent);
     color: var(--accent-contrast);
 }
 
-.btn-primary:hover {
+.cta-solid:hover {
     filter: brightness(1.08);
 }
 
-.btn-outline {
+.cta-outline {
     background: transparent;
     color: var(--accent);
 }
 
-.btn-outline:hover {
+.cta-outline:hover {
     background: var(--accent);
     color: var(--accent-contrast);
 }
@@ -365,14 +365,14 @@ img {
     margin-bottom: 2rem;
 }
 
-.card {
+.info-card {
     background: var(--bg-panel);
     border: 1px solid var(--border);
     border-radius: 10px;
     padding: 1.5rem;
 }
 
-.card-grid {
+.info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.25rem;
@@ -385,7 +385,7 @@ img {
     margin-bottom: 1.5rem;
 }
 
-.filter-btn {
+.filter-chip {
     background: var(--bg-panel);
     border: 1px solid var(--border);
     color: var(--text-muted);
@@ -396,13 +396,13 @@ img {
     font-family: var(--font-body);
 }
 
-.filter-btn[aria-pressed="true"] {
+.filter-chip[aria-pressed="true"] {
     background: var(--accent);
     border-color: var(--accent);
     color: var(--accent-contrast);
 }
 
-.team-card {
+.team-tile {
     background: var(--bg-panel);
     border: 1px solid var(--border);
     border-left: 6px solid var(--team-color, var(--accent));
@@ -417,21 +417,21 @@ img {
     gap: 0.35rem;
 }
 
-.team-card:hover {
+.team-tile:hover {
     background: var(--bg-panel-hover);
 }
 
-.team-card .abbr {
+.team-tile .abbr {
     font-family: var(--font-display);
     font-size: 1.6rem;
     color: var(--team-color, var(--accent));
 }
 
-.team-card .name {
+.team-tile .name {
     font-weight: 600;
 }
 
-.team-card .meta {
+.team-tile .meta {
     font-size: 0.8rem;
     color: var(--text-muted);
 }
@@ -449,7 +449,7 @@ img {
     color: var(--accent);
 }
 
-.modal-backdrop {
+.dialog-overlay {
     position: fixed;
     inset: 0;
     background: rgba(0, 0, 0, 0.6);
@@ -460,11 +460,11 @@ img {
     z-index: 200;
 }
 
-.modal-backdrop.is-open {
+.dialog-overlay.is-open {
     display: flex;
 }
 
-.modal {
+.dialog-panel {
     background: var(--bg-panel);
     border-radius: 12px;
     max-width: 480px;
@@ -476,7 +476,7 @@ img {
     overflow-y: auto;
 }
 
-.modal-header {
+.dialog-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -484,7 +484,7 @@ img {
     margin-bottom: 0.75rem;
 }
 
-.modal-close {
+.dialog-dismiss {
     background: none;
     border: 1px solid var(--border);
     border-radius: 50%;
@@ -495,7 +495,7 @@ img {
     flex-shrink: 0;
 }
 
-.modal dl {
+.dialog-panel dl {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 0.35rem 0.75rem;
@@ -503,15 +503,15 @@ img {
     font-size: 0.9rem;
 }
 
-.modal dt {
+.dialog-panel dt {
     color: var(--text-muted);
 }
 
-.modal dd {
+.dialog-panel dd {
     margin: 0;
 }
 
-.modal ul.legends {
+.dialog-panel ul.legends {
     list-style: none;
     padding: 0;
     margin: 0.5rem 0 0;
@@ -520,7 +520,7 @@ img {
     gap: 0.4rem;
 }
 
-.modal ul.legends li {
+.dialog-panel ul.legends li {
     background: var(--bg);
     border: 1px solid var(--border);
     padding: 0.3rem 0.7rem;
